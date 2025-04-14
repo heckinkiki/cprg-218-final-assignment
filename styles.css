@@ -117,6 +117,11 @@ blockquote {
     margin: 0;
 }
 
+#SpaContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 /* Accommodations page */
 
 .FlexBlock img {
@@ -204,6 +209,10 @@ main.FlexColumn h1 , main.FlexColumn p {
         align-self: center;
     }
 
+    #SpaContent {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .FlexBlock img {
         max-width:50%;
     }
@@ -242,6 +251,11 @@ main.FlexColumn h1 , main.FlexColumn p {
     #ExperienceMoments, #LuxuriousAccommodations, #WhatGuestsSaying {
         display:grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    #SpaContent {
+        display:flex;
+        flex-direction: column;
     }
 
     .FlexBlock {
