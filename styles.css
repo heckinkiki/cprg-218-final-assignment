@@ -4,6 +4,7 @@
 
 body {
     margin:0;
+    width:100%
 }
 
 main {
@@ -159,7 +160,7 @@ blockquote {
 }
 
 .RightJustified {
-    justify-content: end;
+    flex-direction: row-reverse;
 }
 
 .FlexCenter {
@@ -177,4 +178,91 @@ blockquote {
 .TextCenter {
     display:flex;
     justify-content: center;
+}
+
+main.FlexColumn {
+    padding:0;
+}
+
+main.FlexColumn h1 , main.FlexColumn p {
+    margin:0;
+}
+
+@media screen and (max-width:1280px) {
+    header nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #Testimonials {
+        flex-direction: column;
+    }
+
+    #Testimonials .FlexGroup {
+        margin: 1em 1em;
+        max-width: 90%;
+        align-self: center;
+    }
+
+    .FlexBlock img {
+        max-width:50%;
+    }
+
+    .Clamped {
+        max-width:70%;
+    }
+}
+
+@media screen and (max-width:720px){
+    #HeaderTopContent {
+        display:flex;
+        flex-direction: column;
+    }
+
+    #HeaderLogo {
+        max-width: 70%;
+        align-self: center;
+        padding:0;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        width:100%;
+        gap:1em;
+    }
+
+    header nav {
+        padding:0;
+    }
+
+    #ExperienceMoments, #LuxuriousAccommodations, #WhatGuestsSaying {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .FlexBlock {
+        flex-direction: column;
+    }
+
+    .FlexBlock img {
+        align-self:center;
+        max-width:90%;
+    }
+
+    .Clamped {
+        max-width:90%;
+        align-self: center;
+    }
+
+    #ActivitiesExcursions {
+        flex-direction:column
+    }
+
+    .FlexCenter {
+        align-items: center;
+    }
 }
