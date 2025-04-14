@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+}
+
+/* Header */
+
+header {
+
+    background-image: url("media/beach-huts.jpg");
+
+    background-position-y: 55%;
+    background-position-x:center;
+    background-size: cover;
+}
+
+#HeaderContent {
+    background-color: rgba(200,200,200,0.4)
+}
+
+#HeaderTopContent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 70%;
+}
+
+#HeaderLogo {
+    padding-top:1em;
+    padding-left:1em;
+    max-width: 40%;
+}
+
+header nav {
+    padding-right:2em;
+    padding-top:2em;
+}
+
+header nav ul {
+    display:flex;
+    list-style:none;
+    justify-self: end;
+    padding: 0;
+    gap: 3em;
+    height:100%;
+    margin:0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+#WeatherSection {
+    display:flex;
+    justify-content: end;
+    padding-right:2em;
+}
+
+#WeatherValue {
+    align-self: center;
+    color:white;
+}
+
+/* Home Page */
+
+#ExperienceMoments, #LuxuriousAccommodations, #WhatGuestsSaying{
+    display: flex;
+    width:100%;
+    justify-content: space-evenly;
+}
+
+.FlexGroup {
+    padding:1em;
+    margin:1em;
+}
+
+.FlexGroup h3 {
+    margin: 0;
+}
+
+figcaption {
+    justify-self: end;
+}
+
+#WhatGuestsSaying a {
+    align-self: center;
+}
+
+/* Testimonials Page */
+
+#Testimonials {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#Testimonials .FlexGroup {
+    max-width:20%;
+    margin:1em 5em;
+}
+
+blockquote {
+    margin: 0;
+}
+
+/* Accommodations page */
+
+.FlexBlock img {
+    max-width: 30%;
+    height: auto;
+}
+
+#ActivitiesExcursions {
+    display:flex;
+    gap:2em;
+    margin: 0 1em;
+    padding: 1em;
+}
+
+#ActivitiesExcursions ul {
+    margin:0;
+}
+
+.ActivitiesMenu {
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+    background-color: rgba(100,100,100,0.2);
+    padding: 1em;
+    border-radius: 1em;
+    justify-content: space-evenly;
+}
+
+/* ComponentClasses */
+
+.FlexBlock {
+    display:flex;
+}
+
+.BackgroundBox {
+    background-color: rgba(100,100,100,0.2);
+    border-radius: 1em;
+}
+
+.RightJustified {
+    justify-content: end;
+}
+
+.FlexCenter {
+    justify-content: center;
+}
+
+.Clamped {
+    max-width:30%;
+}
+
+.Clumped {
+    max-width:60%;
+}
+
+.TextCenter {
+    display:flex;
+    justify-content: center;
+}
